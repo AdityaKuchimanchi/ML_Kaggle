@@ -31,3 +31,32 @@ def find_first_number(n):
   return str(n)[0]
 n=458
 print(find_first_number(n))
+
+## 5. Print GFG n times without the loop
+def printGfg(n):
+    print(n)
+    printGfg(n)
+n="GFG"
+printGfg(n)
+
+## 6. Print numbers from 1 to n without the help of loops. 
+## You only need to complete the function printNos() that takes n as a parameter and prints the number from 1 to n recursively
+def print_recursive_num(n):
+    print(*range(1,n+1))
+n=10
+print_recursive_num(n)
+
+## 7. Fibonacci series up to Nth term
+def fibonacci(n):
+    if n<=0:
+        return []
+    elif n == 1:
+        return [0]
+    else:
+        fib_list = [0,1]
+        while len(fib_list)<=n:
+            next_fib= fib_list[-1] + fib_list[-2]
+            fib_list.append(next_fib)
+    return fib_list
+        
+print(fibnocci(15))
