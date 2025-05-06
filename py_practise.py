@@ -89,3 +89,56 @@ def pow_reverse(n):
 a = 3
 pow_reverse(a)
 
+## --------------------------------------------------------------------------------------------------------------------------- ##
+##List Traversal
+## You are given a list that contains integers. You need to print the elements of the list with a space between them.
+lst = [54, 43, 2, 1, 5]
+
+for i in lst:
+    print(i, end=" ")
+
+## Length of The List
+## You are given a list that contains integers. You need to return the length of the list.
+def length_list(n):
+    return len(n)
+print(length_list([54, 43, 2, 1, 5]))
+
+## Sum The List
+## You are given a list that contains integers. You need to return the sum of the list.
+def sum_list(n):
+    sum =0
+    for i in n:
+        sum += i
+    return sum
+print(sum_list([54, 43, 2, 1, 5]))
+
+## Decrement List Values
+## You are given a list that contains integers. You need to decrement each element of the list by 1 and return the list.
+def minus_list(n):
+    sum =0
+    for i in n:
+        sum = i-1
+        print(sum)
+minus_list([54, 43, 2, 1, 5])
+
+## Append To List
+## You are given three inputs a, b, c. You need to create a list and append a, b, c to the list and then return that list.
+def append_lst(a,b,c):
+    ip=[a,b,c]
+    lst=[]
+    lst.extend(ip)
+    return lst
+a = 1 
+b = 2 
+c = 3
+print(append_lst(a,b,c))
+
+## Less Than
+## You are given a number k and a list arr that contains integers. You need to return list of numbers that are less than k.
+def less_than(n,k):
+    for i in n:
+        if i < k:
+            print(i)
+lst=[54, 43, 2, 1, 5]
+k=6
+less_than(lst,k)
