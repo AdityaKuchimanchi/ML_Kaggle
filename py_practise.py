@@ -58,5 +58,34 @@ def fibonacci(n):
             next_fib= fib_list[-1] + fib_list[-2]
             fib_list.append(next_fib)
     return fib_list
-        
 print(fibnocci(15))
+
+## 8.Juggler Sequence
+## Juggler Sequence is a series of integers in which the first term starts with a positive integer number a and the remaining terms 
+## are generated from the immediate previous term using the below recurrence relation:
+## Given a number n, find the Juggler Sequence for this number as the first term of the sequence until it becomes 1
+import math as m
+def juggler_seq(n):
+    if n != 1:
+        if n%2==0:
+            n = int(m.sqrt(pow(n, 1)))
+            print(n)
+        else:
+            n = int(m.sqrt(pow(n,3)))
+            print(n)
+        juggler_seq(n)
+a = 9
+print(a)
+juggler_seq(a)
+
+## 9. Power Of Numbers
+## Given a number n, find the value of n raised to the power of its own reverse
+import math as m
+def pow_reverse(n):
+    # print(n)
+   b = str(n)[::-1]
+   n = pow(n, int(b[-1]))
+   print(n)
+a = 3
+pow_reverse(a)
+
