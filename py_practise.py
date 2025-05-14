@@ -142,3 +142,30 @@ def less_than(n,k):
 lst=[54, 43, 2, 1, 5]
 k=6
 less_than(lst,k)
+
+## Average
+## You are given a list arr that contains integers. You need to return average of the non negative integers.
+n = [5, 0, 0, 0] #[1, 2, 3] #[-12, 8, -7, 6, 12, -9, 14]
+def avg_positive_num(n):
+    avg_val = 0
+    op = []
+    for i in n:
+        if i>0:
+            op.append(i)
+    avg_val = sum(op)/len(op)        
+    return avg_val
+print(avg_positive_num(n))
+
+## Separate Even Odd
+## You are given a list numbers that contains integers. You need to return two lists, one of even numbers and other of odd numbers.
+lst=[54, 43, 2, 5, 14, 17, 18, 9]
+def seperate_even_odd(n):
+    even_lst=[]
+    odd_lst=[]
+    for i in n:
+        if i%2==0:
+            even_lst.append(i)
+        else:
+            odd_lst.append(i)
+    return even_lst,odd_lst
+print(seperate_even_odd(lst))
