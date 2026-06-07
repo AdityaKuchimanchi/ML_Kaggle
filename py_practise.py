@@ -169,3 +169,13 @@ def seperate_even_odd(n):
             odd_lst.append(i)
     return even_lst,odd_lst
 print(seperate_even_odd(lst))
+
+## Reverse string native method.
+str1 = 'Aditya'
+lst = []
+totallen = len(str1)
+for i in range(len(str1), -1, -1):
+    if i != 6:
+        print(str1[i])
+        lst.append(str1[i])
+print(lst)
