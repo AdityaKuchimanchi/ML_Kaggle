@@ -179,3 +179,6 @@ for i in range(len(str1), -1, -1):
         print(str1[i])
         lst.append(str1[i])
 print(lst)
+## or
+print(str1[::-1])
+
